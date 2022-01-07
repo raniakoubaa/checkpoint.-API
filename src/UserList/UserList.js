@@ -3,19 +3,7 @@ import { Table } from 'react-bootstrap';
 
 const UserList = () => {
     const [listOfUSer, setListOfUSer] = useState([])
-    // fetch('https://jsonplaceholder.typicode.com/users')
-    // .then(function (response) {
-    //          return response.json();
-    //          //console.log(response)
-    //      })
-    //      .then(function (data) {
-    //              setListOfUSer(data);
-    //          })
-    //          .catch(function (err) {
-    //                  console.log('error: ' + err);
-    //              });
-
-     useEffect(() => {
+       useEffect(() => {
         function fetchData() {
             fetch('https://jsonplaceholder.typicode.com/users')
                 .then(function (response) {
